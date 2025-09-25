@@ -9,7 +9,7 @@ body {
     background: linear-gradient(135deg, #251C31 0%, #7127BA 100%);;
     font-family: 'JetBrains Mono', sans-serif;
     color: #fff;
-    overflow-x: hidden; /* Previne scroll horizontal */
+    overflow-x: hidden;
 }
 
 /* Layout Principal */
@@ -126,10 +126,10 @@ body {
 .box-icon{
     width: fit-content;
     height: 50px;
-    padding: 0 10px; /* Adicionado para centralizar ícones */
-    display: flex; /* Adicionado para centralizar ícones */
-    align-items: center; /* Adicionado para centralizar ícones */
-    justify-content: center; /* Adicionado para centralizar ícones */
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3e1e68;
     border: 1px solid #3a0b79;
     border-radius: 8px;
@@ -190,11 +190,11 @@ body {
     color: #d4d4d4;
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 0; /* Ajustado */
+    margin-bottom: 0;
 }
 
 .project-content a {
-    display: inline-block; /* Para que o margin-top funcione */
+    display: inline-block;
     margin-top: 20px;
 }
 
@@ -223,7 +223,7 @@ body {
     background: linear-gradient(135deg, #3e1e68 0%, #2D1B3D 100%);
     border-radius: 20px;
     border: 1px solid rgba(113, 39, 186, 0.3);
-    margin-bottom: 80px; /* Adicionado espaçamento inferior */
+    margin-bottom: 80px;
 }
 
 .contact-header h2 {
@@ -267,10 +267,9 @@ body {
     color: #7127BA;
 }
 
-/* 🚀 Responsive adjustments 🚀 */
 @media (max-width: 768px) {
     .conteiner {
-        width: 90%; /* Aumenta a largura para ocupar mais espaço */
+        width: 90%;
         padding: 0 10px;
     }
 
@@ -281,7 +280,7 @@ body {
     }
 
     .nav ul {
-        flex-direction: column; /* Empilha os links da navegação */
+        flex-direction: column;
         gap: 15px;
         align-items: center;
     }
@@ -290,7 +289,7 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
-        margin-top: 40px; /* Reduz margem superior */
+        margin-top: 40px;
     }
     
     .hero-image img {
@@ -299,23 +298,23 @@ body {
     }
     
     .hero-header h1 {
-        font-size: 32px; /* Reduz o tamanho da fonte principal */
+        font-size: 32px;
     }
 
     .hero-description h2 {
-        font-size: 18px; /* Reduz o tamanho da fonte secundária */
+        font-size: 18px;
     }
     
     .project,
     .project.reverse {
         flex-direction: column;
-        padding: 30px 20px; /* Reduz o padding interno */
+        padding: 30px 20px;
         gap: 30px;
-        text-align: center; /* Centraliza todo o texto do projeto */
+        text-align: center;
     }
     
     .project.reverse .project-content {
-        text-align: center; /* Garante centralização também no modo reverso */
+        text-align: center;
     }
     
     .project-content h3 {
@@ -323,7 +322,7 @@ body {
     }
 
     .project-image img {
-        height: auto; /* Deixa a altura da imagem se ajustar automaticamente */
+        height: auto;
     }
     
     .skills-icons {
@@ -335,7 +334,7 @@ body {
     }
 
     .contact {
-        padding: 40px 20px; /* Reduz o padding da seção de contato */
+        padding: 40px 20px;
     }
 
     .contact-header h2 {
