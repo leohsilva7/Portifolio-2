@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: #251C31;
-    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #251C31 0%, #7127BA 100%);;
+    font-family: 'JetBrains Mono', sans-serif;
     color: #fff;
 }
 
 /* Layout Principal */
 .conteiner {
-    max-width: 1200px;
+    width: 70%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -23,9 +23,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #1A0B2E;
     padding: 15px 50px;
-    box-shadow: 0 6px 22px -3px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg,#271636 100%, #6f00ff 0%);
 }
 
 .logo img {
@@ -128,7 +127,7 @@ body {
     margin: 0 auto 40px;
 }
 
-.skills-icons {
+.skills-icons{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -137,13 +136,15 @@ body {
 
 .skills-icons i {
     font-size: 50px;
-    transition: transform 0.3s;
 }
 
-.skills-icons i:hover {
-    transform: scale(1.2);
+.box-icon{
+    width: fit-content;
+    height: 50px;
+    background-color: #3e1e68;
+    border: 1px solid #3a0b79;
+    border-radius: 8px;
 }
-
 /* Seção Projects */
 .projects {
     margin: 80px 0;
@@ -232,10 +233,9 @@ body {
 
 /* Seção Contact */
 .contact {
-    margin: 80px 0 10px;
     text-align: center;
     padding: 60px 40px;
-    background: linear-gradient(135deg, #1A0B2E 0%, #2D1B3D 100%);
+    background: linear-gradient(135deg, #3e1e68 0%, #2D1B3D 100%);
     border-radius: 20px;
     border: 1px solid rgba(113, 39, 186, 0.3);
 }
