@@ -134,17 +134,20 @@ body {
     border: 1px solid #3a0b79;
     border-radius: 8px;
 }
-/* Seção Projects */
+
+/* Seção Projects com Grid */
 .projects {
     margin: 80px 0;
+    display: grid;
+    gap: 20px;
 }
 
 .project {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 50px;
     padding: 50px;
-    margin-bottom: 20px;
     transition: transform 0.3s;
 }
 
@@ -153,7 +156,11 @@ body {
 }
 
 .project.reverse {
-    flex-direction: row-reverse;
+    direction: rtl;
+}
+
+.project.reverse > * {
+    direction: ltr;
 }
 
 .project.reverse .project-content {
@@ -161,7 +168,9 @@ body {
 }
 
 .project-content {
-    flex: 1;
+    display: grid;
+    gap: 20px;
+    align-content: start;
 }
 
 .project-category {
@@ -169,21 +178,17 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    display: block;
 }
 
 .project-content h3 {
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
 .project-description {
     background-color: #2C1250;
     border-radius: 14px;
     padding: 20px;
-    margin: 20px 0;
 }
 
 .project-description p {
@@ -195,16 +200,10 @@ body {
 
 .project-content a {
     display: inline-block;
-    margin-top: 20px;
 }
-
 
 .project.reverse .project-description i:hover {
     transform: translateX(-5px);
-}
-
-.project-image {
-    flex: 1;
 }
 
 .project-image img {
@@ -307,12 +306,13 @@ body {
     
     .project,
     .project.reverse {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         padding: 30px 20px;
         gap: 30px;
-        text-align: center;
+        direction: ltr;
     }
     
+    .project-content,
     .project.reverse .project-content {
         text-align: center;
     }
